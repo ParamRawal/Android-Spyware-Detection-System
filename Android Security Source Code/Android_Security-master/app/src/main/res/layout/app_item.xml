@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/app_item_layout"
+    android:layout_marginTop="10dp">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="25dp"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="icon"
+        android:id="@+id/app_icon"
+        />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:maxWidth="175sp"
+        android:layout_toRightOf= "@+id/app_icon"
+        android:layout_toEndOf="@+id/app_icon"
+        android:text="AppName"
+        android:textStyle="bold"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/app_description"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/app_name"
+        android:layout_toRightOf= "@+id/app_icon"
+        android:layout_toEndOf="@+id/app_icon"
+        android:layout_marginVertical="2dp"
+        android:text="Disk Space: NNN MB \nData used: N.N GB"
+        />
+
+</RelativeLayout>
